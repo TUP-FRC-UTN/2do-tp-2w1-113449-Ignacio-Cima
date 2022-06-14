@@ -1,0 +1,16 @@
+<div class="container-fluid py-5 bg-primary">
+    <div class="container row text-white">
+        <div class="col-12">
+            <h1>TP2 - Programación III</h1>
+            <h6>2w1 - 113449 - Ignacio Cima</h6>
+        </div>
+    </div>
+</div>
+
+<app-here-map [zoom]="zoom"></app-here-map>
+<app-mapposition
+  (notify)="handleInputChange($event)"
+></app-mapposition>
+
+
+<router-outlet></router-outlet>

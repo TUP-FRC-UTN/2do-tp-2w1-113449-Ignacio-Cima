@@ -1,0 +1,21 @@
+<div class="container-fluid py-5 bg-dark">
+    <div class="container mx-auto">
+        <div #map id="map"></div>
+    </div>
+</div>
+<div class="container-fluid py-5 bg-dark">
+    <div class="container row mx-auto">
+        <div class="col-12 pb-4">
+            <button class="mx-auto btn btn-primary" (click)=" setCenter()">Generar Marcador</button>
+        </div>
+        <div class="col-lg-6 col-md-12 mb-3 form-group">
+            <label for="" class="text-white">Latitud</label>
+            <input type="text" [(ngModel)] = "lat" id="lat" name="lat" class="form-control" disabled="true">
+        </div>
+        <div class="col-lg-6 col-md-12 form-group">
+            <label for="" class="text-white">Longitud</label>
+            <input type="text" [(ngModel)] = "lng" id="lng" name="lng" class="form-control" disabled="true">
+        </div>
+    </div>
+</div>
+
